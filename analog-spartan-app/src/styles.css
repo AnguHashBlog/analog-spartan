@@ -1,3 +1,8 @@
+/* Tailwind directives  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* You can add global styles to this file, and also import other style files */
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -59,6 +64,10 @@ button:focus-visible {
 
 .card {
   padding: 2em;
+}
+
+.logo {
+  @apply box-content;
 }
 
 @media (prefers-color-scheme: light) {

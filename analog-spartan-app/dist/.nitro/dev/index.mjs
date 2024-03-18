@@ -1,22 +1,22 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import { Server } from 'node:http';
+import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, createError, getRouterParam, getQuery as getQuery$1, readBody } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/ofetch/dist/node.mjs';
-import destr from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/node_modules/radix3/dist/index.mjs';
+import { provider, isWindows } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, setResponseHeader, send, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, createError, getRouterParam, getQuery as getQuery$1, readBody } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///workspaces/analog-spartan/analog-spartan-app/node_modules/radix3/dist/index.mjs';
 
 function getEnv(key, opts) {
   const envKey = snakeCase(key).toUpperCase();
@@ -114,7 +114,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"D:/Estee/Programming/My-Open-Source/AnguHashBlog/analog-spartan/analog-spartan-app/src/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/workspaces/analog-spartan/analog-spartan-app/src/server/assets"}];
 
 const assets = createStorage();
 
@@ -126,11 +126,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Estee\\Programming\\My-Open-Source\\AnguHashBlog\\analog-spartan\\analog-spartan-app","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Estee\\Programming\\My-Open-Source\\AnguHashBlog\\analog-spartan\\analog-spartan-app\\src\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Estee\\Programming\\My-Open-Source\\AnguHashBlog\\analog-spartan\\analog-spartan-app\\dist\\.nitro","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Estee\\Programming\\My-Open-Source\\AnguHashBlog\\analog-spartan\\analog-spartan-app\\dist\\.nitro\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\Estee\\Programming\\My-Open-Source\\AnguHashBlog\\analog-spartan\\analog-spartan-app\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspaces/analog-spartan/analog-spartan-app","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/workspaces/analog-spartan/analog-spartan-app/src/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspaces/analog-spartan/analog-spartan-app/dist/.nitro","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/workspaces/analog-spartan/analog-spartan-app/dist/.nitro/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/workspaces/analog-spartan/analog-spartan-app/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -648,7 +648,8 @@ function renderHTMLError(error) {
  * which won't be parsed by Nitro correctly.
  */
 
-const _LpVt9L = eventHandler(async (event) => {
+const _vqEG4o = eventHandler(async (event) => {
+  // @ts-ignore
   const apiPrefix = `/${globalThis._importMeta_.env.RUNTIME_CONFIG?.apiPrefix ?? 'api'}`;
   if (event.node.req.url?.startsWith(apiPrefix)) {
     const reqUrl = event.node.req.url?.replace(apiPrefix, '');
@@ -663,16 +664,17 @@ const _LpVt9L = eventHandler(async (event) => {
     }
 
     return proxyRequest(event, reqUrl, {
+      // @ts-ignore
       fetch: $fetch.native,
     });
   }
 });
 
-const _lazy_7Rsi2h = () => Promise.resolve().then(function () { return hello$1; });
+const _lazy_SnGmkb = () => Promise.resolve().then(function () { return hello$1; });
 
 const handlers = [
-  { route: '/v1/hello', handler: _lazy_7Rsi2h, lazy: true, middleware: false, method: undefined },
-  { route: '', handler: _LpVt9L, lazy: false, middleware: true, method: undefined }
+  { route: '/v1/hello', handler: _lazy_SnGmkb, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _vqEG4o, lazy: false, middleware: true, method: undefined }
 ];
 
 function createNitroApp() {

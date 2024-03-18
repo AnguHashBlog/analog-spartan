@@ -5,7 +5,7 @@
   "projects": {
     "my-app": {
       "projectType": "application",
-      "root": "",
+      "root": ".",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -52,6 +52,6 @@
     }
   },
   "cli": {
-    "analytics": "c503c6c1-0e06-4b2e-b2ea-e6068d2fdc92"
+    "analytics": "3e1be954-914f-4ad7-a279-c4799ba359e0"
   }
 }
