@@ -56,4 +56,4 @@ body:
       description: If you plan on contributing code please read - [Contribution Guide](https://anguhashblog.com/contributing)
       options:
         - label: I agree to follow this project's Contribution Docs
-          required: false
+          required: true
